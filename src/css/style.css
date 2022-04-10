@@ -1,0 +1,86 @@
+* {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+button {
+	display: block;
+	width: 20rem;
+	border: none;
+	transition: all 0.5s ease;
+	padding: 1em;
+	background-color: #c4b7f5;
+	font-size: bold;
+}
+
+.answer {
+	margin: 1em auto;
+}
+
+.answer:hover {
+	background-color: hsl(249, 100%, 62%);
+	color: hsl(0, 0%, 100%);
+	transform: scale(1.05) translateY(-0.5em);
+	cursor: pointer;
+}
+
+.answer.active {
+	background-color: hsl(249, 100%, 62%);
+	color: hsl(0, 0%, 100%);
+	transform: scale(1.05) translateY(-0.5em);
+}
+
+.confirm {
+	margin: 2em auto;
+	color: hsl(0, 0%, 100%);
+	background-color: hsl(122, 39%, 49%);
+	border-radius: 0.8em;
+	cursor: pointer;
+	font-size: bold;
+}
+
+.confirm:hover {
+	background-color: hsl(121, 100%, 76%);
+	color: hsl(0, 0%, 0%);
+}
+
+.wrong {
+	background-color: hsl(0, 100%, 50%);
+	color: hsl(0, 0%, 100%);
+}
+
+.right {
+	background-color: hsl(120, 100%, 50%);
+	color: hsl(0, 0%, 100%);
+	animation: flashesRights 1s infinite;
+}
+
+@keyframes flashesRights {
+	0% {
+		background-color: hsl(128, 95%, 59%);
+	}
+	50% {
+		background-color: hsl(128, 98%, 39%);
+	}
+	100% {
+		background-color: hsl(128, 100%, 24%);
+	}
+}
+
+.hidden {
+	display: none;
+}
+
+.newGame {
+	margin: 1em auto;
+	color: hsl(0, 0%, 100%);
+	background-color: hsl(0, 0%, 0%);
+	cursor: pointer;
+	font-size: bold;
+}

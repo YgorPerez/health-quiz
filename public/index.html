@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<script
+			src="https://code.jquery.com/jquery-3.6.0.min.js"
+			defer
+		></script>
+		<script src="../src/javascript/index.js" defer></script>
+		<link rel="stylesheet" href="../src/css/style.css" />
+	</head>
+	<body>
+		<div class="header">
+			<h1>Quiz Sobre Saúde</h1>
+		</div>
+		<div class="main" data-status="playing">
+			<h2 id="question"></h2>
+			<div class="answers" id="answers">
+				<button class="answer" id="answer0">Pergunta 1</button>
+
+				<button class="answer" id="answer1">Pergunta 2</button>
+
+				<button class="answer" id="answer2">Pergunta 3</button>
+
+				<button class="answer" id="answer3">Pergunta 4</button>
+			</div>
+			<button class="confirm" id="confirm">Confirmar</button>
+		</div>
+		<div class="status hidden" id="status">
+			<h1 id="message">Game Over!</h1>
+			<button class="newGame" id="newGame">New Game!</button>
+			<h2>Pontuação: <span id="score">0</span></h2>
+		</div>
+	</body>
+</html>
